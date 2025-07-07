@@ -1,47 +1,126 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity:Water</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
+  <div class="container">
+    <!-- Header / Hero Section -->
+    <header class="hero">
+      <img src="logo.png" alt="Charity:Water Logo" class="logo" />
+
+      <h1>Real Change. <br />Tracked Impact.</h1>
+      <p>100% of your donation funds clean water — <br />and we show you exactly where it goes.</p>
+
+      <!-- CTA Button -->
+      <div class="cta">
+        <input type="text" placeholder="Your help will change the world." />
+        <button>Donate</button>
+      </div>
+    </header>
+
+    <!-- Image Section -->
+    <section class="story-image">
+      <img src="water-tap.jpg" alt="Clean water tap in action" />
     </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
+    <!-- Bottom CTA Boxes -->
+    <section class="cta-boxes">
+      <div class="box">
+        <strong>📣 Start a Campus Fundraiser</strong>
+        <p>Lead your classmates to raise funds and awareness.</p>
+      </div>
+      <div class="box">
+        <strong>🎉 Pledge Your Birthday</strong>
+        <p>Ask for donations instead of gifts and change lives.</p>
+      </div>
     </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  </div>
 </body>
 </html>
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #0a4c5e;
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+  border-radius: 10px;
+  position: relative;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cta input {
+  padding: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+}
+
+.cta button {
+  background-color: #fcb900;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.cta-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.box {
+  background: white;
+  border-left: 4px solid #fcb900;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
