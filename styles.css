@@ -7,10 +7,14 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-image: url(https://media.istockphoto.com/id/689752318/photo/blue-gradient-soft-background.jpg?s=612x612&w=0&k=20&c=Udgs6Y5IXgVxLMyAAOSShAC6qJBcBJJriLzmoZtXSqk=);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #333;
   line-height: 1.6;
 }
+
 
 /* Container */
 .container {
